@@ -51,7 +51,6 @@
                 <td>{{ item.percentageInfected.toFixed(5) }}%</td>
                 <td>{{ item.percentageRecovered.toFixed(2) }}%</td>
                 <td>{{ item.mortalityConfirmed.toFixed(2) }}%</td>
-                <td>{{ item.mortalityPopulation.toFixed(2) }}%</td>
               </tr>
             </tbody>
           </template>
@@ -130,12 +129,8 @@ import Axios from 'axios'
           value: 'percentageRecovered',
         },
         {
-          text: 'Mortality rate / cases',
+          text: 'Mortality rate',
           value: 'mortalityConfirmed',
-        },
-        {
-          text: 'Mortality rate / population',
-          value: 'mortalityPopulation',
         },
       ],
     }
