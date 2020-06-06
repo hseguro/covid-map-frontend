@@ -141,7 +141,7 @@ import Axios from 'axios'
     }
   },
   mounted() {
-    Axios.get('http://54.207.16.176:4000/').then(res => {
+    Axios.get('https://5edb0b2c320116001cbc470a-hsegura.esrever.dev/').then(res => {
       this.$data.global = res.data.global
       // @ts-ignore
       this.$data.countries = this.getStatitics(res.data.countries)
